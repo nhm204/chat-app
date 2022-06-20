@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger - Chat App</title>
+    <link rel="icon" href="./assets/img/Dribbble.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fonts/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav__selection">
+                <a href="./index.html" class="nav__link">
+                    <i class="fi fi-rr-comments nav__icon"></i>
+                </a>
+                <a href="#" class="nav__link">
+                    <i class="fi fi-rr-users-alt nav__icon nav__icon--selected"></i>
+                </a>
+                <a href="" class="nav__link">
+                    <i class="fi fi-rr-phone-call nav__icon"></i>
+                </a>
+                <a href="" class="nav__link">
+                    <i class="fi fi-rr-comment nav__icon"></i>
+                </a>
+                <a href="" class="nav__link">
+                    <i class="fi fi-rr-folder nav__icon"></i>
+                </a>
+                <a href="" class="nav__link">
+                    <i class="fi fi-rr-address-book nav__icon"></i>
+                </a>
+                <a href="" class="nav__link">
+                    <i class="fi fi-rr-settings nav__icon"></i>
+                </a>
+            </div>
+            <div class="user__profile">
+                <img src="./assets/img/user_avatar.jpg" alt="">
+            </div>
+        </nav>
+
+        <!-- Message List Section -->
+        <section class="message-list__section">
+            <div class="message-list__header-wrapper">
+                <div class="message-list__header">
+                    <h1 class="message-list__heading">Messages</h1>
+                    <div class="message-list__icons">
+                        <!-- <i class="fi fi-rr-edit message-list__icon"></i> -->
+                        <i class="fi fi-br-edit message-list__icon"></i>
+                        <!-- <i class="fi fi-rr-video-camera message-list__icon"></i> -->
+                        <i class="fi fi-br-video-camera message-list__icon"></i>
+                        <!-- <i class="fi fi-rr-box message-list__icon"></i> -->
+                    </div>
+                </div>
+    
+                <div class="message-list__searchbar">
+                    <i class="fi fi-rr-search"></i>
+                    <input type="text" placeholder="Search..." aria-placeholder="Search">
+                </div>
+            </div>
+            
+            <ul class="message__items">
+                <li class="message__item message__item--selected">
+                    <img src="./assets/img/user_avatar4.png" alt="" class="message__item-ava">
+                    <div class="message__item-details">
+                        <div class="message__item-heading">
+                            <h3 class="message__item-name">2MAKETHEVIBE</h3>
+                            <span class="message__item-hour">20:00 PM</span>
+                        </div>
+                        <div class="message__item-info">
+                            <span class="message__item-message">You: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi impedit obcaecati. Neque aspernatur autem perspiciatis molestiae! Quo, libero neque est, fuga eligendi aliquid ab esse assumenda accusantium aut atque?</span>
+                            <!-- <span class="message__item-quantity">2</span> -->
+                            <span class="message__item-seen">
+                                <i class="fi fi-br-check message__item-seen-icon"></i>
+                                <i class="fi fi-br-check message__item-seen-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message__section">
+            <header class="message__header">
+                <div class="message__header-left">
+                    <img src="./assets/img/user_avatar4.png" alt="" class="message__header-ava">
+                    <div class="message__header-info">
+                        <h3 class="message__name">2MAKETHEVIBE</h3>
+                        <div class="message__header-members">
+                            <img src="./assets/img/user_avatar.jpg" alt="" class="message__header-member">
+                            <img src="./assets/img/user_avatar1.png" alt="" class="message__header-member">
+                            <img src="./assets/img/user_avatar3.png" alt="" class="message__header-member">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message__header-right">
+                    <!-- <i class="fi fi-rr-phone-call message__header-icon"></i> -->
+                    <i class="fi fi-sr-phone-call message__header-icon"></i>
+                    <!-- <i class="fi fi-rr-video-camera message__header-icon"></i> -->
+                    <i class="fi fi-sr-video-camera message__header-icon"></i>
+                    <!-- <i class="fi fi-rr-info message__header-icon"></i> -->
+                    <!-- Nếu chọn thêm class message__header-icon--selected -->
+                    <i class="fi fi-sr-info message__header-icon"></i>
+                </div>
+            </header>
+
+            <main class="message__body">
+                <div class="message__brief">
+                    <img src="./assets/img/user_avatar4.png" alt="" class="message__brief-ava">
+                    <h3 class="message__name">2MAKETHEVIBE</h3>
+                    <div class="message__brief-info">You created this group</div>
+                    <div class="message__brief-selection">
+                        <div class="message__brief-option">
+                            <i class="fi fi-sr-user-add"></i>
+                            <div class="message__brief-option-info">Add</div>
+                        </div>
+                        <div class="message__brief-option">
+                            <i class="fi fi-sr-pencil"></i>
+                            <div class="message__brief-option-info">Name</div>
+                        </div>
+                        <div class="message__brief-option">
+                            <i class="fi fi-sr-users-alt"></i>
+                            <div class="message__brief-option-info">Members</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="user__messages">
+                    <img src="./assets/img/user_avatar3.png" alt="" class="user__ava">
+                    <div class="messages-detail">
+                        <span class="name">người chơi hệ nghiệp quật</span>
+                        <div class="user__messages-content">
+                            <div class="user__message">Hello</div>
+                            <div class="user__message">How is your day?</div>
+                            <div class="user__message">It's raining all day. Such a bad day!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user__messages">
+                    <img src="./assets/img/user_avatar1.png" alt="" class="user__ava">
+                    <div class="messages-detail">
+                        <span class="name">người chơi hệ cười</span>
+                        <div class="user__messages-content">
+                            <div class="user__message">Hihihihi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my__messages">
+                    <div class="messages-detail">
+                        <span class="name">Me</span>
+                        <div class="my__messages-content">
+                            <div class="my__message">Ehehehehe</div>
+                            <div class="my__message">Ehehehehe</div>
+                            <div class="my__message">Ehehehehe</div>
+                        </div>
+                    </div>
+                    <img src="./assets/img/user_avatar.jpg" alt="" class="my__ava">
+                </div>
+
+                <div class="message__timeline">Yesterday, June 13</div>
+
+                <div class="my__messages">
+                    <div class="messages-detail">
+                        <span class="name">Me</span>
+                        <div class="my__messages-content">
+                            <div class="my__message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci perferendis voluptatum alias, tempore eos dolorum ea saepe totam quo harum, odio molestias magnam, laborum ratione voluptate corrupti quasi eum.</div>
+                        </div>
+                    </div>
+                    <img src="./assets/img/user_avatar.jpg" alt="" class="my__ava">
+                </div>
+            </main>
+
+            <footer class="message__footer">
+                <div class="message__footer-selection">
+                    <i class="fi fi-sr-add message__footer-icon"></i>
+                    <i class="fi fi-br-picture message__footer-icon"></i>
+                    <i class="fi fi-sr-clip message__footer-icon"></i>
+                    <i class="fi fi-sr-microphone message__footer-icon"></i>
+                </div>
+                <div class="add-a-message">
+                    <input type="text" placeholder="Add a message...">
+                    <i class="fi fi-sr-smile"></i>
+                </div>
+                <i class="fi fi-sr-thumbs-up message__footer-react-icon"></i>
+                <i class="fi fi-sr-paper-plane message__footer-send-icon"></i>
+            </footer>
+        </section>
+
+        <section class="info__section">
+            <div class="info__header">
+                <img src="./assets/img/user_avatar4.png" alt="" class="info__ava">
+                <h3 class="message__name">2MAKETHEVIBE</h3>
+            </div>
+            <div class="info__container">
+                <label for="chat-customize" class="info__container-heading">
+                    Customize chat
+                    <i class="fi fi-br-angle-small-down"></i>
+                </label>
+                <input type="checkbox" name="" id="chat-customize" class="info__chat-customize" hidden>
+                <div class="info__container-body info__container-body--chat-customize">
+                    <div class="info__content">
+                        <i class="fi fi-rr-palette"></i>
+                        Change theme
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-grin"></i>
+                        Change emojis
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-pencil"></i>
+                        Edit nicknames
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-search"></i>
+                        Message Search
+                    </div>
+                </div>
+
+                <label for="files" class="info__container-heading">
+                    Media, files and links
+                    <i class="fi fi-br-angle-small-down"></i>
+                </label>
+                <input type="checkbox" name="" id="files" class="info__files" hidden>
+                <div class="info__container-body info__container-body--files">
+                    <div class="info__content">
+                        <i class="fi fi-rr-picture"></i>
+                        Media file
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-document"></i>
+                        File
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-link"></i>
+                        Link
+                    </div>
+                </div>
+
+                <label for="privacy-support" class="info__container-heading">
+                    Privacy and Support
+                    <i class="fi fi-br-angle-small-down"></i>
+                </label>
+                <input type="checkbox" name="" id="privacy-support" class="info__privacy-support" hidden>
+                <div class="info__container-body info__container-body--privacy-support">
+                    <div class="info__content">
+                        <i class="fi fi-rr-bell"></i>
+                        Mute notifications
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-ban"></i>
+                        Block
+                    </div>
+                    <div class="info__content">
+                        <i class="fi fi-rr-shield-exclamation"></i>
+                        Report
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>

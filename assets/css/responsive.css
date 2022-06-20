@@ -1,0 +1,32 @@
+.hide-on-pc {
+    display: none;
+}
+
+/* Tablet & Mobile: smaller than 1024px (1023px) */
+@media (max-width: 63.9375em) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+/* Tablet: greater than 740px and smaller than 1024px */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    :root {
+        --info-section-width: 240px;
+    }
+
+    .info__section {
+
+    }
+}
+
+/* Mobile: smaller than 739px */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+}

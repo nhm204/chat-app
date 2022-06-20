@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #5D8BF4;
+    --secondary-color: #DAEAF1;
+    /* --third-color: #DAEAF1; */
+    --background-color: #F9F9F9;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #e5e5e5;
+
+    --navbar-width: 72px;
+    --message-list-width: 310px;
+    --info-section-width: 350px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* 100% = 16 px => 62.5% = 10px */
+    line-height: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide-on-pc {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
